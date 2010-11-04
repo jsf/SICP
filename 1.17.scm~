@@ -1,0 +1,10 @@
+(define (double a)
+  (* a 2))
+
+(define (halve a)
+  (/ a 2))
+
+
+(define (fast-* a b)
+  (cond ((= b 0) a)
+        ((even? b) 

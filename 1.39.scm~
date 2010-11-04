@@ -1,0 +1,12 @@
+(define (cont-frac n d k)
+  (define (aux i)
+    (if (> i k)
+        0
+        (/ (n i) (+ (d i) (aux (+ i 1))))))
+  (aux 1))
+
+(define (square n)
+  (* n n))
+
+(define (n i)
+  

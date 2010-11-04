@@ -1,0 +1,9 @@
+(define (repeated f n)
+  (if (= n 0)
+      (lambda (x) (f x))
+      (lambda (x) (f (repeated f (- n 1))))))
+
+(define (square n)
+  (* n n))
+
+((repeated square 2) 5)

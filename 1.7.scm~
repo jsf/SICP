@@ -1,0 +1,4 @@
+;TODO: Find out how to load another file and load 1.6.scm
+
+(define good-enough? guess old_guess
+  (< (abs (- guess old_guess) .001)))

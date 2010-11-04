@@ -1,0 +1,1 @@
+By calling expmod twice we are creating a perfect binary tree of height log(n), hence the number of nodes is 2^(log(n)+1) - 1 = 2^log(n)*2-1 = n*2-1.  So it's O(n).
